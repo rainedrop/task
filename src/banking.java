@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 class Bank {
 	static Scanner sc = new Scanner(System.in);
-
 	static int balance;
 
 	public char menu() {
@@ -77,7 +76,6 @@ class Bank {
 
 public class Banking {
 	public static void main(String[] args) {
-
 		Bank bank = new Bank();
 
 		while (true) {
@@ -85,7 +83,6 @@ public class Banking {
 
 			String menu = Character.toString(bank.menu());
 			int iSum = bank.inputInt(menu);
-
 			bank.cal(menu, iSum);
 		}
 	}
