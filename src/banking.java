@@ -22,18 +22,16 @@ class Bank {
 		int iNum = 0;
 
 		while (true) {
+			switch (menu) {
+			case "i":
+				System.out.print("# 입금액을 입력해주세요 : ");
+				break;
+			case "o":
+				System.out.print("# 출금액을 입력해주세요 : ");
+				break;
+			}
 			try {
-				switch (menu) {
-				case "i":
-					System.out.print("# 입금액을 입력해주세요 : ");
-					iNum = sc.nextInt();
-					break;
-				case "o":
-					System.out.print("# 출금액을 입력해주세요 : ");
-					iNum = sc.nextInt();
-					break;
-				}
-
+				iNum = sc.nextInt();
 			} catch (Exception e) {
 				System.out.println("잘못된 값을 입력하셨습니다.");
 				sc = new Scanner(System.in);
