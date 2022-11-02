@@ -34,7 +34,8 @@ class Bank {
 				iNum = sc.nextInt();
 			} catch (Exception e) {
 				System.out.println("잘못된 값을 입력하셨습니다.");
-				sc = new Scanner(System.in);
+//				sc = new Scanner(System.in);
+				sc.nextLine();
 				continue;
 			}
 			if (iNum >= 0)
